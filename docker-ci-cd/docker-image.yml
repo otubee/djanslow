@@ -23,7 +23,7 @@ jobs:
         username: ${{secrets.DOCKER+HUB_USERNAME}}
         password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
     -
-      name: Build image
+      name: Setup docker build
       uses: docker/setup-buildx-active@v2
     -
       name: Build and Push to Docker hub
